@@ -1,7 +1,7 @@
 ![banner.png](banner.png)
 
 # 💫 About Me:
-👋 Hey there! I'm Saurav, a passionate Software Engineer. With a keyboard as my compass and lines of code as my map, I navigate through the endless possibilities of technology.<br><br>💻 I love diving into new projects, solving puzzles, and learning something new every day. Whether it's building websites, tinkering with APIs, I'm always up for a challenge.<br><br><br><br>🚀 Let's connect, collaborate, and create something amazing together in the vast world of code!
+👋 Hey there! I'm Saurav, a passionate Software Engineer.<br>💻 I love diving into new projects, solving puzzles, and learning something new every day. Whether it's building websites, tinkering with APIs, I'm always up for a challenge.<br>🚀 Let's connect, collaborate, and create something amazing together in the vast world of code!
 
 
 ## 🌐 Socials:
