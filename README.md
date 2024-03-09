@@ -1,14 +1,7 @@
 ![banner.png](banner.png)
 
 # 💫 About Me:
-**Hi there! 👋, I'm Saurav Singh
-Passionate Software Engineer from India 🚀
-- 🌱 Currently diving into the world of Full Stack Development 💻
-- 📫 Reach me at sauravchp2@gmail.com 📧
-- ⚡ Fun fact: I think I am funny 😄
-Feel free to explore my projects and connect with me.
-I'm always open to collaboration and new opportunities.
-Let's code and create something amazing together! 🚀!**
+**Hi there! 👋, I'm Saurav Singh<br>Passionate Software Engineer from India 🚀<br>- 🌱 Currently diving into the world of Full Stack Development 💻<br>- 📫 Reach me at sauravchp2@gmail.com 📧<br>- ⚡ Fun fact: I think I am funny 😄<br>Feel free to explore my projects and connect with me.<br>I'm always open to collaboration and new opportunities.<br>Let's code and create something amazing together! 🚀!**
 
 
 ## 🌐 Socials:
