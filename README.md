@@ -1,7 +1,14 @@
 ![banner.png](banner.png)
 
 # 💫 About Me:
-**👋 Hey there! I'm Saurav, a passionate Software Engineer.<br>💻 I love diving into new projects, solving puzzles, and learning something new every day.<br>🚀 Let's connect, collaborate, and create something amazing together in the vast world of code!**
+**Hi there! 👋, I'm Saurav Singh
+Passionate Software Engineer from India 🚀
+- 🌱 Currently diving into the world of Full Stack Development 💻
+- 📫 Reach me at sauravchp2@gmail.com 📧
+- ⚡ Fun fact: I think I am funny 😄
+Feel free to explore my projects and connect with me.
+I'm always open to collaboration and new opportunities.
+Let's code and create something amazing together! 🚀!**
 
 
 ## 🌐 Socials:
