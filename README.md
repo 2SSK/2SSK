@@ -1,7 +1,21 @@
 ![banner.png](banner.png)
 
 # 💫 About Me:
-CSE 26' student. <br><br>INTERESTS:<br>- Backend<br>- Mobile Development<br>- DevOps<br>- Nvim<br><br>Languages / Frameworks:<br>- Scripting<br>- GOLANG<br>- JS / TS<br>- Cpp<br>- React js / Nextjs<br>- React Native<br><br>CONTACTS:<br>- EMAIL : sauravchp2@gmail.com
+### INTERESTS:
+  - Backend<br>
+  - Mobile Development
+  - DevOps
+  - Nvim
+  
+### Languages / Frameworks:
+  - Scripting
+  - GOLANG
+  - JS / TS
+  - Cpp
+  - React js / Nextjs
+  - React Native
+### CONTACTS:
+- **EMAIL** : sauravchp2@gmail.com
 
 
 ## 🌐 Socials:
