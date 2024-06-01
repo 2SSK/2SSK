@@ -1,17 +1,6 @@
 # 💫 About Me:
-### INTERESTS:
-  - Backend<br>
-  - Mobile Development
-  - DevOps
-  - Nvim
-  
-### Languages / Frameworks:
-  - Scripting
-  - GOLANG
-  - JS / TS
-  - Cpp
-  - React js / Nextjs
-  - React Native
+### Software engineer from India
+
 ### CONTACTS:
 - **EMAIL** : sauravchp2@gmail.com
 
