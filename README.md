@@ -1,5 +1,5 @@
 # 💫 About Me:
-**🖥️Software engineer from India**
+**🖥️Aspiring DevOps**
 
 ### CONTACTS:
 - **EMAIL** : sauravchp2@gmail.com
