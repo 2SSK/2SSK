@@ -1,5 +1,5 @@
 # 💫 About Me:
-**🖥️Aspiring DevOps**/**Full-Stack WebDev**
+**🖥️Aspiring DevOps / Full-Stack WebDev**
 
 ### CONTACTS:
 - **EMAIL** : sauravchp2@gmail.com
