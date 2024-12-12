@@ -1,16 +1,18 @@
 const infoArea = document.querySelector(".info");
 
+// Neofetch like info
 const info = {
   User: "SSK",
   Host: "archBTW",
-  Uptime: "blog",
+  Uptime: "21 years",
   Shell: "zsh",
-  Editor: "neovim",
+  Editor: "Neovim",
   OS: "Arch Linux",
   Hobby: "Tinkering with Linux & custom setups",
   Quote: "I use arch BTW 🐧",
 };
 
+// Loop through the object and create elements
 for (const [key, value] of Object.entries(info)) {
   const k = document.createElement("span");
   k.classList.add("key");
@@ -27,6 +29,7 @@ for (const [key, value] of Object.entries(info)) {
 
   const infoRow = document.createElement("div");
   infoRow.classList.add("info-row");
+
   infoRow.appendChild(k);
   infoRow.appendChild(seprator);
   infoRow.appendChild(v);
