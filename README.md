@@ -1,5 +1,3 @@
-## [![](https://visitcount.itsvg.in/api?id=2SSK&icon=0&color=0)](https://visitcount.itsvg.in)
-
 # Hi there 👋, I'm SSK!
 
 > **Portfolio:** [**ssk.portfolio**](https://ssk-portfolio.vercel.app)
