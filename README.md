@@ -14,4 +14,4 @@
 ## 🚀 Featured Projects
 
 | Repository | Description | Primary Language | Stars | Forks | Last Updated |
-| ---------- | ----------- | ---------------- | ----- | ----- | ------------ |
+| ---- | ----------- | ---------------- | ----- | ----- | ------------ |
