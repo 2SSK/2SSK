@@ -1,3 +1,4 @@
 node_modules/
 scripts/update-readme.js.backup
 scripts/update-readme.js.before-fixes
+.github/workflows/update-readme.yml.backup
