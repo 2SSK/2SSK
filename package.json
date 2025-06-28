@@ -1,0 +1,20 @@
+{
+  "name": "2ssk-github-stats",
+  "version": "1.0.0",
+  "description": "GitHub repository statistics updater for README",
+  "main": "scripts/update-readme.js",
+  "scripts": {
+    "update": "node scripts/update-readme.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.2"
+  },
+  "keywords": [
+    "github",
+    "readme",
+    "stats",
+    "automation"
+  ],
+  "author": "2SSK",
+  "license": "MIT"
+} 
