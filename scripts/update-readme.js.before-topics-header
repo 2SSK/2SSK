@@ -6,15 +6,8 @@ const token = process.env.GITHUB_TOKEN;
 const featuredTopic = process.env.FEATURED_TOPIC || 'featured';
 
 const octokit = token
-  ? new Octokit({
-      auth: token,
-      userAgent: 'GitHub-Readme-Update',
-      request: { headers: { accept: 'application/vnd.github.mercy-preview+json' } }
-    })
-  : new Octokit({
-      userAgent: 'GitHub-Readme-Update',
-      request: { headers: { accept: 'application/vnd.github.mercy-preview+json' } }
-    });
+  ? new Octokit({ auth: token, userAgent: 'GitHub-Readme-Update' })
+  : new Octokit({ userAgent: 'GitHub-Readme-Update' });
 
 /**
  * Calculate a score for repository quality/seriousness
