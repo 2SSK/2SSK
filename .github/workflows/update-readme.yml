@@ -34,6 +34,7 @@ jobs:
     - name: Fetch repositories and update README
       env:
         USERNAME: "2SSK"
+        FEATURED_TOPIC: "featured"
       run: npm run update
         
     - name: Commit and push changes

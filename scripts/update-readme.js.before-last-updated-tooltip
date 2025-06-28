@@ -3,76 +3,58 @@ const fs = require('fs');
 
 const username = process.env.USERNAME || '2SSK';
 const token = process.env.GITHUB_TOKEN;
+const featuredTopic = process.env.FEATURED_TOPIC || 'featured';
 
-if (!token) {
-  console.error('❌ GITHUB_TOKEN environment variable is required');
-  process.exit(1);
-}
+const octokit = token
+  ? new Octokit({ auth: token, userAgent: 'GitHub-Readme-Update' })
+  : new Octokit({ userAgent: 'GitHub-Readme-Update' });
 
-const octokit = new Octokit({
-  auth: token,
-  userAgent: 'GitHub-Readme-Update'
-});
-
+/**
+ * Calculate a score for repository quality/seriousness
+ * @param {Object} repo - Repository object from GitHub API
+ * @returns {number} - Calculated score
+ */
 function calculateRepoScore(repo) {
   let score = 0;
   
   // Base score for public repos
-  if (!repo.private) {
-    score += 10;
-  }
+  if (!repo.private) score += 10;
   
-  // Stars (weight: 5 points each)
+  // Community validation (stars and forks)
   score += (repo.stargazers_count || 0) * 5;
-  
-  // Forks (weight: 3 points each)
   score += (repo.forks_count || 0) * 3;
   
-  // Size (weight: 1 point per KB, max 50 points)
+  // Codebase size (max 50 points)
   score += Math.min(repo.size || 0, 50);
   
-  // Has description
-  if (repo.description) {
-    score += 5;
-  }
+  // Documentation and metadata
+  if (repo.description) score += 5;
+  if (repo.topics && repo.topics.length > 0) score += 3;
+  if (repo.license) score += 2;
+  if (repo.has_wiki || repo.description) score += 3;
   
-  // Has topics
-  if (repo.topics && repo.topics.length > 0) {
-    score += 3;
-  }
-  
-  // Has license
-  if (repo.license) {
-    score += 2;
-  }
-  
-  // Not archived
-  if (!repo.archived) {
-    score += 5;
-  }
+  // Maintenance status
+  if (!repo.archived) score += 5;
   
   // Recent activity (within last 6 months)
   if (repo.updated_at) {
     const updatedAt = new Date(repo.updated_at);
     const daysSinceUpdate = (Date.now() - updatedAt.getTime()) / (1000 * 60 * 60 * 24);
-    if (daysSinceUpdate < 180) {
-      score += 10;
-    }
-  }
-  
-  // Has documentation
-  if (repo.has_wiki || repo.description) {
-    score += 3;
+    if (daysSinceUpdate < 180) score += 10;
   }
   
   return score;
 }
 
+/**
+ * Update README with repository statistics
+ */
 async function updateReadme() {
   try {
-    console.log(`Fetching repositories for user: ${username}`);
+    console.log(`🔍 Fetching repositories for user: ${username}`);
+    console.log(`⭐ Looking for repositories with topic: "${featuredTopic}"`);
     
-    // Get all repositories
+    // Fetch repositories from GitHub API
     const { data: repos } = await octokit.repos.listForUser({
       username,
       per_page: 100,
@@ -84,28 +66,35 @@ async function updateReadme() {
       throw new Error('Invalid response from GitHub API');
     }
     
-    console.log(`Found ${repos.length} repositories`);
+    console.log(`📊 Found ${repos.length} total repositories`);
     
-    // Filter public repos and calculate scores
-    const publicRepos = repos
-      .filter(repo => !repo.private)
-      .map(repo => ({
-        ...repo,
-        score: calculateRepoScore(repo)
-      }));
+    // Filter public repos with the featured topic and calculate scores
+    const featuredRepos = repos
+      .filter(repo => !repo.private && repo.topics && repo.topics.includes(featuredTopic))
+      .map(repo => ({ ...repo, score: calculateRepoScore(repo) }));
     
-    console.log(`Found ${publicRepos.length} public repositories`);
+    console.log(`⭐ Found ${featuredRepos.length} repositories with topic "${featuredTopic}"`);
     
-    // Sort by score, then stars, then forks, then last updated
-    publicRepos.sort((a, b) => {
+    // Validate we have featured repos
+    if (featuredRepos.length === 0) {
+      console.log(`⚠️  No repositories found with topic "${featuredTopic}". README will not be updated.`);
+      console.log('💡 To add repositories to your README:');
+      console.log('   1. Go to your repository on GitHub');
+      console.log('   2. Click Settings → Topics');
+      console.log(`   3. Add the topic "${featuredTopic}"`);
+      return;
+    }
+    
+    // Sort by score, then by stars, then by forks, then by last updated
+    featuredRepos.sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
       if ((b.stargazers_count || 0) !== (a.stargazers_count || 0)) return (b.stargazers_count || 0) - (a.stargazers_count || 0);
       if ((b.forks_count || 0) !== (a.forks_count || 0)) return (b.forks_count || 0) - (a.forks_count || 0);
       return new Date(b.updated_at || 0) - new Date(a.updated_at || 0);
     });
     
-    // Take top 15 repos
-    const topRepos = publicRepos.slice(0, 15);
+    // Take top 15 repos (or all if less than 15)
+    const topRepos = featuredRepos.slice(0, 15);
     
     // Generate table rows
     const tableRows = topRepos.map(repo => {
@@ -123,7 +112,7 @@ async function updateReadme() {
       return `| [${name}](https://github.com/${username}/${name}) | ${description} | ${language} | ${stars} | ${forks} | ${updatedAt} |`;
     });
     
-    // Read current README
+    // Read and update README
     const readmePath = 'README.md';
     if (!fs.existsSync(readmePath)) {
       throw new Error('README.md file not found');
@@ -134,12 +123,12 @@ async function updateReadme() {
     // Find the table section
     const tableStart = content.indexOf('| Repository | Description | Primary Language | Stars | Forks | Last Updated |');
     if (tableStart === -1) {
-      throw new Error('Table header not found in README.md');
+      throw new Error('Table header not found in README.md. Expected: "| Repository | Description | Primary Language | Stars | Forks | Last Updated |"');
     }
     
     let tableEnd = content.indexOf('\n\n', tableStart);
     if (tableEnd === -1) {
-      tableEnd = content.length; // Use end of file if no double newline found
+      tableEnd = content.length;
     }
     
     // Create new table content
@@ -153,10 +142,10 @@ ${tableRows.join('\n')}`;
     // Write back to README
     fs.writeFileSync(readmePath, newContent);
     
-    console.log(`✅ Updated README with ${tableRows.length} repositories`);
-    console.log('Top 5 repos by score:');
+    console.log(`✅ Successfully updated README with ${tableRows.length} featured repositories`);
+    console.log('🏆 Top repositories by score:');
     topRepos.slice(0, 5).forEach((repo, i) => {
-      console.log(`${i + 1}. ${repo.name} (Score: ${repo.score}, Stars: ${repo.stargazers_count || 0})`);
+      console.log(`  ${i + 1}. ${repo.name} (Score: ${repo.score}, Stars: ${repo.stargazers_count || 0})`);
     });
     
   } catch (error) {
@@ -164,8 +153,12 @@ ${tableRows.join('\n')}`;
     if (error.status) {
       console.error(`GitHub API Status: ${error.status}`);
     }
+    if (error.response) {
+      console.error(`GitHub API Response: ${JSON.stringify(error.response.data, null, 2)}`);
+    }
     process.exit(1);
   }
 }
 
+// Run the update
 updateReadme();
