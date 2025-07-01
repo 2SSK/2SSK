@@ -11,11 +11,11 @@
 
 | Repository | Description | Primary Language | Stars | Forks | Last Updated |
 | ---------- | ----------- | ---------------- | ----- | ----- | ------------ |
-| [dot-files](https://github.com/2SSK/dot-files) | i3/sway dotfiles | Lua | 159 | 9 | <span title="Jun 28, 2025">2 days ago</span> |
-| [react-college-website](https://github.com/2SSK/react-college-website) | A responsive university website built with React.js, featuring sections for about us, courses, bl... | JavaScript | 5 | 0 | <span title="Jun 28, 2025">2 days ago</span> |
-| [photo_ai](https://github.com/2SSK/photo_ai) | PhotoAi : AI Image/Video Editor | TypeScript | 3 | 1 | <span title="Jun 28, 2025">2 days ago</span> |
-| [CoFlow](https://github.com/2SSK/CoFlow) | CoFlow: A collaborative platform empowering teams to ideate, plan, and innovate seamlessly on a v... | TypeScript | 0 | 0 | <span title="Jun 28, 2025">2 days ago</span> |
-| [text_editor](https://github.com/2SSK/text_editor) | A C++ Text Editor using FLTK | C++ | 0 | 0 | <span title="Jun 28, 2025">2 days ago</span> |
-| [container_from_scratch](https://github.com/2SSK/container_from_scratch) | Container From Scratch | Go | 0 | 0 | <span title="Jun 28, 2025">2 days ago</span> |
-| [jobPortal](https://github.com/2SSK/jobPortal) | A FullStack Job Search Platform inspired by `naukri.com` and 'indeed.com` | TypeScript | 0 | 0 | <span title="Jun 28, 2025">2 days ago</span> |
-| [wallpaper-rotate](https://github.com/2SSK/wallpaper-rotate) | Instantly rotate wallpapers on Sway using Bash, swaybg, and swayidle. Randomizes wallpapers from ... | Shell | 0 | 0 | <span title="Jun 28, 2025">2 days ago</span> |
+| [dot-files](https://github.com/2SSK/dot-files) | i3/sway dotfiles | Lua | 159 | 9 | <span title="Jun 28, 2025">3 days ago</span> |
+| [react-college-website](https://github.com/2SSK/react-college-website) | A responsive university website built with React.js, featuring sections for about us, courses, bl... | JavaScript | 5 | 0 | <span title="Jun 28, 2025">3 days ago</span> |
+| [photo_ai](https://github.com/2SSK/photo_ai) | PhotoAi : AI Image/Video Editor | TypeScript | 3 | 1 | <span title="Jun 28, 2025">3 days ago</span> |
+| [CoFlow](https://github.com/2SSK/CoFlow) | CoFlow: A collaborative platform empowering teams to ideate, plan, and innovate seamlessly on a v... | TypeScript | 0 | 0 | <span title="Jun 28, 2025">3 days ago</span> |
+| [text_editor](https://github.com/2SSK/text_editor) | A C++ Text Editor using FLTK | C++ | 0 | 0 | <span title="Jun 28, 2025">3 days ago</span> |
+| [container_from_scratch](https://github.com/2SSK/container_from_scratch) | Container From Scratch | Go | 0 | 0 | <span title="Jun 28, 2025">3 days ago</span> |
+| [jobPortal](https://github.com/2SSK/jobPortal) | A FullStack Job Search Platform inspired by `naukri.com` and 'indeed.com` | TypeScript | 0 | 0 | <span title="Jun 28, 2025">3 days ago</span> |
+| [wallpaper-rotate](https://github.com/2SSK/wallpaper-rotate) | Instantly rotate wallpapers on Sway using Bash, swaybg, and swayidle. Randomizes wallpapers from ... | Shell | 0 | 0 | <span title="Jun 28, 2025">3 days ago</span> |
