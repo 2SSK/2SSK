@@ -11,8 +11,8 @@
 
 | Repository | Description | Primary Language | Stars | Forks | Last Updated |
 | ---------- | ----------- | ---------------- | ----- | ----- | ------------ |
-| [dot-files](https://github.com/2SSK/dot-files) | i3/sway dotfiles | HTML | 208 | 8 | <span title="Dec 03, 2025">Today</span> |
-| [ansible-linux-system](https://github.com/2SSK/ansible-linux-system) | Ansible script to setup my linux system environment | Shell | 11 | 0 | <span title="Nov 21, 2025">12 days ago</span> |
+| [dot-files](https://github.com/2SSK/dot-files) | i3/sway dotfiles | HTML | 209 | 8 | <span title="Dec 04, 2025">Today</span> |
+| [ansible-linux-system](https://github.com/2SSK/ansible-linux-system) | Ansible script to setup my linux system environment | Shell | 11 | 0 | <span title="Nov 21, 2025">13 days ago</span> |
 | [autoupd](https://github.com/2SSK/autoupd) | A simple CLI too to automatically update system packages using your Linux distro's package manage... | Go | 5 | 0 | <span title="Oct 23, 2025">1 month ago</span> |
 | [react-college-website](https://github.com/2SSK/react-college-website) | A responsive university website built with React.js, featuring sections for about us, courses, bl... | JavaScript | 5 | 0 | <span title="Jun 28, 2025">5 months ago</span> |
 | [photo_ai](https://github.com/2SSK/photo_ai) | PhotoAi : AI Image/Video Editor | TypeScript | 4 | 1 | <span title="Aug 12, 2025">3 months ago</span> |
