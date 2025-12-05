@@ -6,8 +6,8 @@ i spend most of my time building **terminal tools** and **web apps**, along with
 gradually diving into **core backend** & **DevOps**
 
 <div>
-<a href="https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#github-stats-card"><img height="190" align="center" alt="GitHub Stats" src="https://github-readme-stats-tau-nine-81.vercel.app/api?username=2SSK&show_icons=true&custom_title=GitHub+Statistics&title_color=cba6f7&theme=catppuccin_mocha&border_color=45475a"/></a>
-<a href="https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#top-languages-card"><img width="345" align="center" alt="Top Language" src="https://github-readme-stats-tau-nine-81.vercel.app/api/top-langs/?username=2SSK&layout=compact&title_color=cba6f7&theme=catppuccin_mocha&border_color=45475a"/></a>
+<a href="https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#github-stats-card"><img height="190" align="center" alt="GitHub Stats" src="https://github-readme-stats-tau-nine-81.vercel.app/api?username=2SSK&show_icons=true&custom_title=GitHub+Statistics&title_color=cba6f7&theme=tokyonight&border_color=45475a"/></a>
+<a href="https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#top-languages-card"><img width="345" align="center" alt="Top Language" src="https://github-readme-stats-tau-nine-81.vercel.app/api/top-langs/?username=2SSK&layout=compact&title_color=cba6f7&theme=tokyonight&border_color=45475a"/></a>
 </div>
 
 ## 🚀 Featured Projects
@@ -24,4 +24,3 @@ gradually diving into **core backend** & **DevOps**
 | [postgres-ha-cluster](https://github.com/2SSK/postgres-ha-cluster)     | Postgres HA setup with Patroni, HAProxy and etcd                                                     | Shell            | 0     | 0     | <span title="Oct 22, 2025">1 month ago</span>  |
 | [jobPortal](https://github.com/2SSK/jobPortal)                         | A FullStack Job Search Platform inspired by `naukri.com` and 'indeed.com`                            | TypeScript       | 0     | 0     | <span title="Jun 28, 2025">5 months ago</span> |
 | [rust_ollama](https://github.com/2SSK/rust_ollama)                     | simple Rust library for Ollama intergration                                                          | Rust             | 0     | 0     | <span title="Sep 09, 2025">2 months ago</span> |
-
