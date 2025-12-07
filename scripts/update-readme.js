@@ -1,7 +1,7 @@
 const { Octokit } = require('@octokit/rest');
 const fs = require('fs');
 
-const username = process.env.USERNAME || '2SSK';
+const username = process.env.GITHUB_USERNAME || '2SSK';
 const token = process.env.GITHUB_TOKEN;
 const featuredTopic = process.env.FEATURED_TOPIC || 'featured';
 
@@ -106,12 +106,12 @@ async function updateReadme() {
     const readmePath = 'README.md';
     if (!fs.existsSync(readmePath)) throw new Error('README.md file not found');
     let content = fs.readFileSync(readmePath, 'utf8');
-    const tableStart = content.indexOf('| Repository | Description | Primary Language | Stars | Forks | Last Updated |');
-    if (tableStart === -1) throw new Error('Table header not found in README.md. Expected: "| Repository | Description | Primary Language | Stars | Forks | Last Updated |"');
+    const tableStart = content.search(/\| Repository.*\| Description.*\| Primary Language.*\| Stars.*\| Forks.*\| Last Updated.*\|/);
+    if (tableStart === -1) throw new Error('Table header not found in README.md. Expected table with columns: Repository, Description, Primary Language, Stars, Forks, Last Updated');
     let tableEnd = content.indexOf('\n\n', tableStart);
     if (tableEnd === -1) tableEnd = content.length;
-    const newTable = `| Repository | Description | Primary Language | Stars | Forks | Last Updated |
-| ---------- | ----------- | ---------------- | ----- | ----- | ------------ |
+    const newTable = `| Repository                                                             | Description                                                                                          | Primary Language | Stars | Forks | Last Updated                                   |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------- | ----- | ----- | ---------------------------------------------- |
 ${tableRows.join('\n')}`;
     const newContent = content.substring(0, tableStart) + newTable + content.substring(tableEnd);
     fs.writeFileSync(readmePath, newContent);
