@@ -4,7 +4,7 @@ i love **terminals**, **minimalism**, & **automation** :3
 
 **DevOps Engineer**, **Command Line Inhabitant**.
 
-I work manly with `Linux`, `Azure`, `Docker`, `Postgres` and `Go`.
+I work mainly with `Linux`, `Azure`, `Docker`, `Postgres` and `Go`.
 
 I spend most of my time building **terminal tools**, and **web/mobile apps**, along with some **fun side projects**.
 
