@@ -1,12 +1,20 @@
-### hey there! i'm Saurav
+<h1 align="left">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=4000&pause=1000&color=00FF00&center=false&vCenter=true&lines=Hey+%F0%9F%91%8B%2C+I'm+Saurav.....;DevOps+%26+Backend;Nice+to+see+you....!" alt="Typing SVG" />
+  </a>
+</h1>
 
-i love **terminals**, **minimalism**, & **automation** :3
+### 💻 &nbsp;&nbsp;&nbsp; Languages
 
-**DevOps Engineer**, **Command Line Inhabitant**.
+[![My Skills](https://skillicons.dev/icons?i=python,go,cpp,bash,ts&theme=dark)](https://skillicons.dev)
 
-I work mainly with `Linux`, `Azure`, `Docker`, `Postgres` and `Go`.
+<br/>
 
-I spend most of my time building **terminal tools**, and **web/mobile apps**, along with some **fun side projects**.
+### ⛓️ &nbsp;&nbsp;&nbsp; Tools In Use
+
+[![My Skills](https://skillicons.dev/icons?i=linux,neovim,git,docker,azure,&theme=dark)](https://skillicons.dev)
+
+<br/>
 
 <div>
 <a href="https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#github-stats-card"><img height="190" align="center" alt="GitHub Stats" src="https://github-readme-stats-tau-nine-81.vercel.app/api?username=2SSK&show_icons=true&custom_title=GitHub+Statistics&title_color=cba6f7&theme=tokyonight&border_color=45475a"/></a>
