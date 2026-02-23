@@ -4,15 +4,15 @@
   </a>
 </h1>
 
-### 💻 &nbsp;&nbsp;&nbsp; Languages
+<!-- ### 💻 &nbsp;&nbsp;&nbsp; Languages -->
 
-[![My Skills](https://skillicons.dev/icons?i=python,go,cpp,bash,js,ts,postgres&theme=dark)](https://skillicons.dev)
+<!-- [![My Skills](https://skillicons.dev/icons?i=python,go,cpp,bash,js,ts,postgres&theme=dark)](https://skillicons.dev) -->
 
-<br/>
+<!-- <br/> -->
 
-### ⛓️ &nbsp;&nbsp;&nbsp; Tools In Use
+<!-- ### ⛓️ &nbsp;&nbsp;&nbsp; Tools In Use -->
 
-[![My Skills](https://skillicons.dev/icons?i=linux,neovim,git,docker,githubactions,jenkins,kubernetes,ansible,azure,prometheus,grafana,elasticsearch,&theme=dark)](https://skillicons.dev)
+<!-- [![My Skills](https://skillicons.dev/icons?i=linux,neovim,git,docker,githubactions,jenkins,kubernetes,ansible,azure,prometheus,grafana,elasticsearch,&theme=dark)](https://skillicons.dev) -->
 
 <br/>
 
