@@ -25,9 +25,9 @@
 
 | Repository                                                             | Description                                                                                          | Primary Language | Stars | Forks | Last Updated                                   |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------- | ----- | ----- | ---------------------------------------------- |
-| [dot-files](https://github.com/2SSK/dot-files) | i3/sway dotfiles | QML | 227 | 8 | <span title="Apr 02, 2026">4 days ago</span> |
-| [ansible-linux-system](https://github.com/2SSK/ansible-linux-system) | Ansible script to setup my linux system environment | Shell | 13 | 0 | <span title="Mar 22, 2026">14 days ago</span> |
-| [Homelab](https://github.com/2SSK/Homelab) | Personal homelab configurations and dotfiles for managing Ubuntu server. | Shell | 6 | 0 | <span title="Mar 08, 2026">29 days ago</span> |
+| [dot-files](https://github.com/2SSK/dot-files) | i3/sway dotfiles | QML | 227 | 8 | <span title="Apr 07, 2026">Today</span> |
+| [ansible-linux-system](https://github.com/2SSK/ansible-linux-system) | Ansible script to setup my linux system environment | Shell | 13 | 0 | <span title="Mar 22, 2026">15 days ago</span> |
+| [Homelab](https://github.com/2SSK/Homelab) | Personal homelab configurations and dotfiles for managing Ubuntu server. | Shell | 6 | 0 | <span title="Mar 08, 2026">1 month ago</span> |
 | [autoupd](https://github.com/2SSK/autoupd) | A simple CLI too to automatically update system packages using your Linux distro's package manage... | Go | 5 | 0 | <span title="Oct 23, 2025">5 months ago</span> |
 | [photo_ai](https://github.com/2SSK/photo_ai) | PhotoAi : AI Image/Video Editor | TypeScript | 4 | 1 | <span title="Dec 27, 2025">3 months ago</span> |
 | [react-college-website](https://github.com/2SSK/react-college-website) | A responsive university website built with React.js, featuring sections for about us, courses, bl... | JavaScript | 5 | 0 | <span title="Jun 28, 2025">9 months ago</span> |
