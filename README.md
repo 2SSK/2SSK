@@ -25,7 +25,7 @@
 
 | Repository                                                             | Description                                                                                          | Primary Language | Stars | Forks | Last Updated                                   |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------- | ----- | ----- | ---------------------------------------------- |
-| [dot-files](https://github.com/2SSK/dot-files) | i3/sway dotfiles | QML | 248 | 9 | <span title="Jul 09, 2026">Today</span> |
+| [dot-files](https://github.com/2SSK/dot-files) | i3/sway dotfiles | QML | 248 | 9 | <span title="Jul 10, 2026">Today</span> |
 | [ansible-linux-system](https://github.com/2SSK/ansible-linux-system) | Ansible script to setup my linux system environment | Shell | 13 | 0 | <span title="Mar 22, 2026">3 months ago</span> |
 | [autoupd](https://github.com/2SSK/autoupd) | A simple CLI too to automatically update system packages using your Linux distro's package manage... | Go | 7 | 0 | <span title="Jun 07, 2026">1 month ago</span> |
 | [Homelab](https://github.com/2SSK/Homelab) | Personal homelab configurations and dotfiles for managing Ubuntu server. | Shell | 7 | 0 | <span title="Apr 18, 2026">2 months ago</span> |
