@@ -1,6 +1,6 @@
 <h1 align="left">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=4000&pause=1000&color=00FF00&center=false&vCenter=true&lines=Hey+%F0%9F%91%8B%2C+I'm+Saurav.....;Infrastructure+%26+Reliability Engineer;Nice+to+see+you....!" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=4000&pause=1000&color=00FF00&center=false&vCenter=true&lines=Hey+%F0%9F%91%8B%2C+I'm+Saurav.....;Infrastructure+%26+Reliability+Er;Nice+to+see+you....!" alt="Typing SVG" />
   </a>
 </h1>
 
@@ -40,4 +40,3 @@
 | [CoFlow](https://github.com/2SSK/CoFlow)                                   | CoFlow: A collaborative platform empowering teams to ideate, plan, and innovate seamlessly on a v... | TypeScript       | 1     | 0     | <span title="Jul 19, 2025">16 months ago</span> |
 | [postgres-ha-cluster](https://github.com/2SSK/postgres-ha-cluster)         | Postgres HA setup with Patroni, HAProxy and etcd                                                     | Shell            | 0     | 0     | <span title="Mar 05, 2026">8 months ago</span>  |
 | [jobPortal](https://github.com/2SSK/jobPortal)                             | A FullStack Job Search Platform inspired by `naukri.com` and 'indeed.com`                            | TypeScript       | 0     | 0     | <span title="Jun 28, 2025">16 months ago</span> |
-
